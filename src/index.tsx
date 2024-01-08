@@ -9,7 +9,7 @@ const root = createRoot(rootElement as HTMLElement);
 
 root.render(
     <StrictMode>
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/ts-react-tw-05-movies">
             <App />
         </BrowserRouter>
     </StrictMode>
