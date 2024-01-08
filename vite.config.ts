@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './', // Базовый путь для обработки маршрутов
+  base: '/ts-react-tw-05-movies', // Базовый путь для обработки маршрутов
   plugins: [react()],
   define: {
     global:'window',
