@@ -13,7 +13,7 @@ const Movies = () => {
   const [searchMovies, setSearchMovies] = useState<GeneralMovieInfo[]>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
-  const [searchParams, setSearchParams]: [URLSearchParams, Function] = useSearchParams();
+  const [searchParams, setSearchParams]: [URLSearchParams, (params: URLSearchParams) => void] = useSearchParams();
   const querySearch: string = searchParams.get('query') ?? '';
 
   useEffect(() => {
