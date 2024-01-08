@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body::-webkit-scrollbar {
+      @apply w-[16px] h-0
+    }
+    body::-webkit-scrollbar-track {
+      @apply bg-scrollbarColor
+    }
+    body::-webkit-scrollbar-thumb {
+      @apply bg-scrollbarBacground rounded-[3px]
+    }
+  }
